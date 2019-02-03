@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import chalk from 'chalk';
 import * as inquirer from 'inquirer';
 import * as Listr from 'listr';
