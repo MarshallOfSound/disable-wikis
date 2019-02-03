@@ -1,0 +1,26 @@
+{
+  "name": "disable-wikis",
+  "version": "1.0.0",
+  "description": "Disable all wikis for a GitHub org",
+  "main": "dist/index.js",
+  "bin": {
+    "disable-wikis": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/inquirer": "^0.0.43",
+    "@types/listr": "^0.13.0",
+    "@types/node": "^10.12.21",
+    "typescript": "^3.3.1"
+  },
+  "dependencies": {
+    "@octokit/rest": "^16.15.0",
+    "chalk": "^2.4.2",
+    "inquirer": "^6.2.2",
+    "listr": "^0.14.3"
+  }
+}
