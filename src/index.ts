@@ -71,7 +71,7 @@ const main = async () => {
         return new Listr(ctx.repos.map(repo => ({
           title: `${org.login}/${repo.name}`,
           task: async () => {
-            if (!repo.has_wiki) return;
+            if (!repo.has_wiki || repo.archived) return;
             
             await octo.repos.update({
               owner: org.login,
